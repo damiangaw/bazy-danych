@@ -1,0 +1,9 @@
+Zaproponowano wstępny schemat bazy danych obsługującej szpital:
+
+    operacja (Id chirurga, imię i nazwisko pacjenta, Id pielęgniarki, data i godzina rozpoczęcia operacji)
+    budynek (numer budynku, ulica)
+    chirurg (Id, imię i nazwisko)
+    pielęgniarka (Id, imię i nazwisko)
+    pacjent (imię i nazwisko, data ur., pesel)
+    stanowisko (pensja)
+    sala (nr sali)
