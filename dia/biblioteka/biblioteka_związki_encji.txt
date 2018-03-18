@@ -1,0 +1,10 @@
+Schemat Biblioteki
+
+	Ksi¹¿ka (nr ISBN, tytu³)
+	Autor (nazwisko, imiê)
+	kategoria (nazwa)
+	egzemplarz (numer ew.)
+	wypo¿yczenie (data wyp, data zwrotu)
+	czytelnik (pesel, has³o, login, nazwisko, imiê)
+	
+	
