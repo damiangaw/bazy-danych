@@ -18,9 +18,23 @@ SELECT *,cena-koszt AS zysk FROM towar WHERE cena is NOT NULL
 
 -- zad P4: wyświetl w kolejnych zapytaniach:
 -- dane klientów spoza Gdańska,
+SELECT * FROM klient WHERE NOT miasto='Gdańsk'
+;
 -- klientów bez telefonu,
+SELECT * FROM klient WHERE telefon IS NULL
+;
 -- klientów spoza Gdańska i bez telefonu,
+SELECT * FROM klient WHERE NOT miasto='Gdańsk' AND telefon IS NULL
+;
 -- dane o układankach,
+SELECT * FROM towar WHERE opis LIKE '%układanka%'
+;
 -- zamówienia niezrealizowane (bez daty wysyłki),
+SELECT * FROM zamowienie WHERE data_wysylki IS NULL
+;
 -- zrealizowane w lutym 2017,
+SELECT * FROM zamowienie WHERE data_wysylki BETWEEN '2017/02/01' AND '2017/02/28'
+;
 -- wyświetl dane o czasie realizacji zamówień już zrealizowanych
+SELECT * FROM zamowienie WHERE data_wysylki IS NOT NULL
+;
