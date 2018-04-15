@@ -1,19 +1,19 @@
 CREATE TABLE naglowek
 (
-    numer            int           PRIMARY KEY,
-    imie             varchar(32)   not null,
-    nazwisko         varchar(32)   not null,
-    adres            varchar(100)  not null,
-    data             date
+  numer    INT PRIMARY KEY,
+  imie     VARCHAR(32)  NOT NULL,
+  nazwisko VARCHAR(32)  NOT NULL,
+  adres    VARCHAR(100) NOT NULL,
+  data     DATE
 );
 
 CREATE TABLE pozycja
 (
-    numer            int   not null,
-    nazwa            varchar(32)   not null,
-    cena             int   not null,
-    ilosc            int   not null,
-    nr_fakt          int   REFERENCES naglowek(numer)
-                           ON DELETE CASCADE,
-    UNIQUE(numer,nr_fakt)
+  numer   INT         NOT NULL,
+  nazwa   VARCHAR(32) NOT NULL,
+  cena    INT         NOT NULL,
+  ilosc   INT         NOT NULL,
+  nr_fakt INT REFERENCES naglowek (numer)
+    ON DELETE CASCADE,
+  UNIQUE (numer, nr_fakt)
 );
