@@ -22,11 +22,11 @@ create table towar
 create table zamowienie
 (
     nr                          serial                    ,
-    klient_nr                   int           NOT NULL,
+    klient_nr                   int               NOT NULL,
     data_zlozenia               date              NOT NULL,
     data_wysylki                date                      ,
     koszt_wysylki               numeric(7,2)              ,
-    CONSTRAINT                  zamowienie_nr_pk PRIMARY KEY(nr)         ,
+    CONSTRAINT                  zamowienie_nr_pk PRIMARY KEY(nr),
     CONSTRAINT                  klient_fk FOREIGN KEY(klient_nr)
                                    REFERENCES klient(nr),
     CONSTRAINT                  dates CHECK(data_zlozenia<=data_wysylki)
