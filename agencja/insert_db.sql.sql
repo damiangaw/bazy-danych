@@ -109,10 +109,8 @@ insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
 -- DODAWANIE ZESPOŁÓW GRAJĄCYCH DANY KONCERT
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(1, 1); -- koncert woodstock, 1 z kolei, zespol pierwszy soulfly
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(2, 2);
-insert into Koncert_Zespol(ID_koncert, ID_zespol) values(3, 3);
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(4, 4);
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(5, 5);
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(6, 6);
-insert into Koncert_Zespol(ID_koncert, ID_zespol) values(7, 7);
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(8, 8);
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(9, 9);
