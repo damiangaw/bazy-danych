@@ -6,7 +6,7 @@ id serial primary key,
 ulga varchar(60),
 rodzaj double precision,
 ilosc int,
-cena int
+cena int,
 data timestamp
 );
 
