@@ -7,6 +7,7 @@ ulga varchar(60),
 rodzaj double precision,
 ilosc int,
 cena int
+data timestamp
 );
 
 CREATE OR REPLACE FUNCTION log_zmiana_bilety_cena()
