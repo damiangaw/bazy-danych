@@ -1,15 +1,15 @@
 set client_encoding='utf-8';
 
 -- DODAWANIE ORGANIZATORÓW
-insert into Organizator(ID, adres, nazwa_firmy) values(1, 'Północna 4, 66-470 Kostrzyn nad Odrą', 'Eventim');
-insert into Organizator(ID, adres, nazwa_firmy) values(2, 'LOTNISKO GDYNIA-KOSAKOWO', 'Orange');
-insert into Organizator(ID, adres, nazwa_firmy) values(3, 'TEREN WYŚCIGÓW KONNYCH, WARSZAWA - SŁUŻEWIEC', 'Orange');
-insert into Organizator(ID, adres, nazwa_firmy) values(4, 'Kołobrzeska 34, Kołobrzeg', 'ActesEvent');
-insert into Organizator(ID, adres, nazwa_firmy) values(5, 'Ergo Arena', 'Polisound');
-insert into Organizator(ID, adres, nazwa_firmy) values(6, 'Tauron Arena', 'Eventim');
-insert into Organizator(ID, adres, nazwa_firmy) values(7, 'Klub Muzyczny B17', 'Music Nation');
-insert into Organizator(ID, adres, nazwa_firmy) values(8, 'Hala Widowiskowa Spodek', 'Soundcheck');
-insert into Organizator(ID, adres, nazwa_firmy) values(9, 'Boom, Belgia', 'Q-Dance');
+insert into Organizator(adres, nazwa_firmy) values('Północna 4, 66-470 Kostrzyn nad Odrą', 'Eventim');
+insert into Organizator(adres, nazwa_firmy) values('LOTNISKO GDYNIA-KOSAKOWO', 'Orange');
+insert into Organizator(adres, nazwa_firmy) values('TEREN WYŚCIGÓW KONNYCH, WARSZAWA - SŁUŻEWIEC', 'Orange');
+insert into Organizator(adres, nazwa_firmy) values('Kołobrzeska 34, Kołobrzeg', 'ActesEvent');
+insert into Organizator(adres, nazwa_firmy) values('Ergo Arena', 'Polisound');
+insert into Organizator(adres, nazwa_firmy) values('Tauron Arena', 'Eventim');
+insert into Organizator(adres, nazwa_firmy) values('Klub Muzyczny B17', 'Music Nation');
+insert into Organizator(adres, nazwa_firmy) values('Hala Widowiskowa Spodek', 'Soundcheck');
+insert into Organizator(adres, nazwa_firmy) values('Boom, Belgia', 'Q-Dance');
 
 -- DODAWANIE BILETÓW
 insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 1, 20000, 150, 'normalny', 'płyta');
@@ -21,6 +21,24 @@ insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(6, 3,
 insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(7, 2, 1400, 350, 'pierwsza pula', 'trybuna C');
 insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(8, 2, 2000, 300, NULL, 'golden circle');
 insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(9, 3, 50000, 220, NULL, 'płyta');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(9, 1, 20000, 150, 'normalny', 'płyta');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(8, 1, 8500, 200, 'ulgowy', 'golden circle');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(7, 2, 1700, 100, 'niepełnosprawni', 'trybuna A');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(6, 1, 500, 800, NULL, 'VIP');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(5, 1, 1000, 500, NULL, 'Early Entrance');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(4, 3, NULL, 450, 'studencki', 'płyta');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 2, 1400, 350, 'pierwsza pula', 'trybuna C');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 2, 2000, 300, NULL, 'golden circle');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 3, 50000, 220, NULL, 'płyta');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 1, 20000, 150, 'normalny', 'płyta');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 1, 8500, 200, 'ulgowy', 'golden circle');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(4, 2, 1700, 100, 'niepełnosprawni', 'trybuna A');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(5, 1, 500, 800, NULL, 'VIP');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(6, 1, 1000, 500, NULL, 'Early Entrance');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(7, 3, NULL, 450, 'studencki', 'płyta');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(8, 2, 1400, 350, 'pierwsza pula', 'trybuna C');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(9, 2, 2000, 300, NULL, 'golden circle');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 3, 50000, 220, NULL, 'płyta');
 
 -- DODAWANIE ZESPOŁÓW
 insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
@@ -87,30 +105,30 @@ insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
         values('Martin', 'Gariix', 9,'wokal', 3750);
 
 -- DODAWANIE KONCERTÓW
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(1, 'Przystanek Woodstock','Kostrzyn','2018-07-29','15:00', 1);
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(2, 'Opener Festiwal','Gdynia','2018-06-30','19:00', 2);
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(3, 'Orange Warsaw','Warszawa','2018-05-27','19:00', 3);
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(4, 'Sunrise Festival','Kołobrzeg','2018-07-27','17:30', 4);
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(5, 'Red Hot Chili Peppers','Gdańsk','2018-08-30','20:00', 5);
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(6, 'Pearl Jam','Kraków','2018-07-13','21:00', 6);
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(7, 'AC/DC','Poznań','2018-08-25','20:15', 7);
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(8, 'Scooter','Katowice','2018-06-19','22:00', 8);
-insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
-  values(9, 'Tomorrowland','Boom','2018-07-28','16:00',9);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('Przystanek Woodstock','Kostrzyn','2018-07-29','15:00', 1);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('Opener Festiwal','Gdynia','2018-06-30','19:00', 2);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('Orange Warsaw','Warszawa','2018-05-27','19:00', 3);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('Sunrise Festival','Kołobrzeg','2018-07-27','17:30', 4);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('Red Hot Chili Peppers','Gdańsk','2018-08-30','20:00', 5);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('Pearl Jam','Kraków','2018-07-13','21:00', 6);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('AC/DC','Poznań','2018-08-25','20:15', 7);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('Scooter','Katowice','2018-06-19','22:00', 8);
+insert into Koncert(nazwa, lokalizacja, data, godzina, ID_organizator)
+  values('Tomorrowland','Boom','2018-07-28','16:00',9);
 
 -- DODAWANIE ZESPOŁÓW GRAJĄCYCH DANY KONCERT
-insert into Koncert_Zespol(ID_koncert, ID_zespol) values(1, 1); -- koncert woodstock, 1 z kolei, zespol pierwszy soulfly
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(1, 1); -- koncert woodstock, 1 z kolei, zespol pierwszy gojira
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(2, 2);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(3, 3);
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(4, 4);
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(5, 5);
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(6, 6);
-insert into Koncert_Zespol(ID_koncert, ID_zespol) values(8, 8);
-insert into Koncert_Zespol(ID_koncert, ID_zespol) values(9, 9);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(7, 7);
