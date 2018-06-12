@@ -15,7 +15,7 @@ CREATE OR REPLACE FUNCTION log_zmiana_bilety_cena()
 
 BEGIN
 IF new.cena <> old.cena THEN
-  INSERT INTO Bilety_zmiana_ceny(ulga, rodzaj, ilosc, cena, timestamp)
+  INSERT INTO Bilety_zmiana_ceny(ulga, rodzaj, ilosc, cena, data)
     VALUES (old.ulga,old.rodzaj,old.ilosc,old.cena,now());
 end if;
 
