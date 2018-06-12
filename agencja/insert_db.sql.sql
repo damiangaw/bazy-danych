@@ -13,38 +13,34 @@ insert into Organizator(ID, adres, nazwa_firmy) values(9, 'Boom, Belgia', 'Q-Dan
 
 -- DODAWANIE BILETÓW
 insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 1, 20000, 150, 'normalny', 'płyta');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 1, 8500, 200, 'ulgowy', 'golden circle');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 2, 1700, 100, 'niepełnosprawni', 'trybuna A');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 1, 500, 800, NULL, 'VIP');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 1, 1000, 500, NULL, 'Early Entrance');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 3, NULL, 450, 'studencki', 'płyta');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 2, 1400, 350, 'pierwsza pula', 'trybuna C');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 2, 2000, 300, NULL, 'golden circle');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(1, 3, 50000, 220, NULL, 'płyta');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 1, 20000, 150, 'normalny', 'płyta');
 insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 1, 8500, 200, 'ulgowy', 'golden circle');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 2, 1700, 100, 'niepełnosprawni', 'trybuna A');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 1, 500, 800, NULL, 'VIP');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 1, 1000, 500, NULL, 'Early Entrance');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 3, NULL, 450, 'studencki', 'płyta');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 2, 1400, 350, 'pierwsza pula', 'trybuna C');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 2, 2000, 300, NULL, 'golden circle');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(2, 3, 50000, 220, NULL, 'płyta');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 1, 20000, 150, 'normalny', 'płyta');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 1, 8500, 200, 'ulgowy', 'golden circle');
 insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 2, 1700, 100, 'niepełnosprawni', 'trybuna A');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 1, 500, 800, NULL, 'VIP');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 1, 1000, 500, NULL, 'Early Entrance');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 3, NULL, 450, 'studencki', 'płyta');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 2, 1400, 350, 'pierwsza pula', 'trybuna C');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 2, 2000, 300, NULL, 'golden circle');
-insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(3, 3, 50000, 220, NULL, 'płyta');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(4, 1, 500, 800, NULL, 'VIP');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(5, 1, 1000, 500, NULL, 'Early Entrance');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(6, 3, NULL, 450, 'studencki', 'płyta');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(7, 2, 1400, 350, 'pierwsza pula', 'trybuna C');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(8, 2, 2000, 300, NULL, 'golden circle');
+insert into Bilety(ID_organizator, pula, ilosc, cena, ulga, rodzaj) values(9, 3, 50000, 220, NULL, 'płyta');
 
 -- DODAWANIE ZESPOŁÓW
 insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
-   values('Soulfly', 'Heavy-Metal', '1997');
+   values('Gojira', 'Heavy-Metal', '1997');
 insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
-   values('Lao Che', 'Rock Alternatywny', '1999');
+   values('Gorillaz', 'Rock Alternatywny', '1999');
+insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
+    values('Muse', 'Rock', '1997');
+insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
+    values('Umc Umc', 'Muzyka elektroniczna', '1999');
+insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
+    values('Red Hot Chili Peppers', 'Rock Alternatywny', '1999');
+insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
+    values('Pearl Jam', 'Rock Alternatywny', '1999');
+insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
+    values('AC/DC', 'Rock n roll', '1999');
+insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
+    values('Scooter', 'Turbo Techno', '1999');
+insert into Zespol(nazwa_zespolu, gatunek_muzyczny, rok_zalozenia)
+    values('Martin Garrix', 'Techno', '1999');
 
 -- DODAWANIE MUZYKÓW
 insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
@@ -59,6 +55,36 @@ insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
        values('Mariusz', 'Denst', 2,'perkusja', 3500);
 insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
        values('Hubert', 'Dobaczewski', 2,'trąbka', 3750);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Mark', 'Caller', 3, 'gitara', 15000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Martin', 'Tetris', 3,'perkusja', 12000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Thomas', 'Kante', 3,'gitara-basowa', 11000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Radek', 'Borek', 4,'gitara', 4000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Marek', 'Leja', 5,'perkusja', 3500);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Oskar', 'Boczny', 5,'trąbka', 3750);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+       values('Piotr', 'Lewski', 5,'gitara', 4000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+       values('Marcin', 'Dawek', 6,'perkusja', 3500);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+       values('Miłosz', 'Robczyński', 6,'trąbka', 3750);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Mateo', 'Ceballo', 6, 'gitara', 15000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Peter', 'Robson', 7,'perkusja', 12000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Wilfred', 'Bucket', 7,'gitara-basowa', 11000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Marek', 'Domek', 7,'gitara', 4000);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Scooter', 'Scooter', 8,'wokal/elektronika', 3500);
+insert into Muzycy(imie, nazwisko, id_zespolu, instrument, wynagrodzenie)
+        values('Martin', 'Gariix', 9,'wokal', 3750);
 
 -- DODAWANIE KONCERTÓW
 insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
@@ -82,5 +108,11 @@ insert into Koncert(id, nazwa, lokalizacja, data, godzina, ID_organizator)
 
 -- DODAWANIE ZESPOŁÓW GRAJĄCYCH DANY KONCERT
 insert into Koncert_Zespol(ID_koncert, ID_zespol) values(1, 1); -- koncert woodstock, 1 z kolei, zespol pierwszy soulfly
-
-
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(2, 2);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(3, 3);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(4, 4);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(5, 5);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(6, 6);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(7, 7);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(8, 8);
+insert into Koncert_Zespol(ID_koncert, ID_zespol) values(9, 9);

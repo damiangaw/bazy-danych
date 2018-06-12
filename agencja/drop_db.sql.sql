@@ -5,8 +5,3 @@ DROP TABLE Muzycy;
 DROP TABLE Zespol;
 DROP TABLE Bilety;
 DROP TABLE Organizator;
-
-
-
-
-
