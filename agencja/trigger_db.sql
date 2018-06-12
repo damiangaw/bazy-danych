@@ -4,7 +4,7 @@ CREATE LANGUAGE plpgsql
 CREATE TABLE Bilety_zmiana_ceny (
 id serial primary key,
 ulga varchar(60),
-rodzaj double precision,
+rodzaj varchar(60),
 ilosc int,
 cena int,
 data timestamp
